@@ -1,6 +1,6 @@
 # Assign-Mentor
 
-assign-mentot API using mongoDB
+assign-mentor API using mongoDB
 
 ## End Point
 
