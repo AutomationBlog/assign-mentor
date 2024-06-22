@@ -8,7 +8,11 @@ validateEmail = (e) => {
 const mentorSchema = new mongoose.Schema(
   {
     Name: { type: String, required: [true, "Name is required"] },
-    email: {type: String,  required: [true, "Email is required"],  validate: validateEmail,  },
+    email: {
+      type: String,
+      required: [true, "Email is required"],
+      validate: validateEmail,
+    },
     role: { type: String, default: "mentor" },
     students: [
       {
@@ -16,12 +20,11 @@ const mentorSchema = new mongoose.Schema(
         ref: "student",
       },
     ],
-    
   },
   {
     versionKey: false,
   }
 );
 
-const mentorModel = mongoose.model("mentor", mentorSchema);
+const mentorModel = mongoose.model("mentor", mentorSchema, "mentor");
 module.exports = mentorModel;

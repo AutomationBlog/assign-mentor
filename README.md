@@ -5,3 +5,7 @@ assign-mentor API using mongoDB
 ## End Point
 
 [Assign Mentor](https://assign-mentor-leob.onrender.com/)
+
+## Mentor API
+
+create Mentor - /
